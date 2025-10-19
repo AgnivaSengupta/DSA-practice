@@ -1,3 +1,3 @@
-## Hi 👋  
-### This repo is just a small space for me to keep track of DSA topics I'm going through.  
-### Nothing fancy here — just my learning progress 🙂
+# Hi 👋
+This repo is just a small space for me to keep track of DSA topics I'm going through.
+Nothing fancy here — just my learning progress...
