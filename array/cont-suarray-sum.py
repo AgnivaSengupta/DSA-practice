@@ -4,9 +4,9 @@ def checkSubarraySum(nums, k):
     for i, val in enumerate(nums):
         summ += val
         modulo = summ % k
-        print(f"{i} --> {summ} --> {modulo}")
+        # print(f"{i} --> {summ} --> {modulo}")
         if modulo in dic and abs(dic[modulo] - i) >= 2:
-            print(dic)
+            # print(dic)
             return True
         elif modulo in dic and abs(dic[modulo] - i) < 2:
             continue
