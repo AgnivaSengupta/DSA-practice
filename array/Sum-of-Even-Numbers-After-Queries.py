@@ -50,3 +50,27 @@ print(sumEven(nums, queries))
 # loop 1 -> [2, 2, 3, 4] -> sum = 8 -> [8]
 # loop 2 -> [2, -1, 3, 4] -> sum = 6 -> [8, 6]
 # loop 3 -> [-2, -1, 3, 4] -> sum = 2
+# 
+# 
+# 1 2 3 4 -> sum = 6
+# 2 2 3 4 -> sum = 8 --> [8]
+# 2 -1 3 4 -> sum = 6 --> [8, 6]
+
+arr = [1, 2, 3, 4] 
+def sol(queries, arr):
+    summ = sum(num for num in arr if num % 2 == 0)
+    result = []
+    
+    for val, i in queries:
+        if arr[i] % 2 == 0: # og odd
+            summ -= arr[i]
+        arr[i] += val
+        
+        if arr[i] % 2 == 0:
+            summ += arr[i]
+        # else:
+        #     summ -= arr[i]
+        result.append(summ)
+    return result
+    
+print(sol(queries, arr))

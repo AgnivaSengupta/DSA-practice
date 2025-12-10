@@ -3,7 +3,7 @@
 def printSpiral(matrix):
     result = []
     if not matrix:
-        return res
+        return result
 
     top, bottom, left, right = 0, len(matrix)-1, 0, len(matrix[0])-1
 

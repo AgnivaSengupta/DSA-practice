@@ -35,3 +35,8 @@ def threeSum(arr):
 
 
 print(threeSum([-2,0,1,1,2]))
+
+# -2 0 1 1 2
+#  i l     r
+#  i   l r
+#    i l   r
